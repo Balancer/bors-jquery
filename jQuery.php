@@ -2,9 +2,6 @@
 
 namespace B2;
 
-class jQuery
+class jQuery extends \jquery
 {
-	function load()
-	{
-	}
 }
