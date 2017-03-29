@@ -12,12 +12,12 @@ class jQuery extends \jquery
 			// If not installed bower-asset/jquery then using CDN
 			if(empty(\bors::$bower_asset_packages['bower-asset/jquery']))
 			{
-				\bors_use('https://code.jquery.com/jquery-3.1.1.min.js');
+				\bors_use('https://code.jquery.com/jquery-3.2.1.min.js');
 				return;
 			}
 
 			// Package bower-asset/jquery installed, use them
-			$bower_asset_url = \B2\Cfg::get('bower-assets.base_url', '/bower-asset');
+			$bower_asset_url = \B2\Cfg::get('bower-asset.path', '/bower-asset');
 			\bors_use($bower_asset_url.'/jquery/dist/jquery.min.js');
 			return;
 		}
