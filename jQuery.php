@@ -12,7 +12,7 @@ class jQuery extends \jquery
 			// If not installed bower-asset/jquery then using CDN
 			if(empty(\bors::$bower_asset_packages['bower-asset/jquery']))
 			{
-				\bors_use('https://code.jquery.com/jquery-3.2.1.min.js');
+				\bors_use('https://code.jquery.com/jquery-3.3.1.min.js');
 				return;
 			}
 
